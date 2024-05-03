@@ -4,6 +4,10 @@
     margin: 0;
     font-family: 'Poetsen One', sans-serif , 'Times New Roman', Times, serif;
 }
+body {
+    background-color: rgb(6, 180, 180);
+    overflow: hidden;
+}
 .nav {
     background-color: #fff;
     width: 100%;
@@ -30,3 +34,65 @@
     color: black;
     font-size: 20px;
 }
+.hero{
+    display: flex;
+}
+.img-principal {
+    width: 60%;
+}
+.img-principal img {
+    width: 140vh;
+    display: flex;
+}
+.text {
+    }
+  h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 4rem;
+  }
+  
+  .roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #000303;
+  }
+  
+  
+  #spare-time{
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #902ed1;
+    
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 10s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
