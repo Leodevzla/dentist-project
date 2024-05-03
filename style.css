@@ -4,10 +4,14 @@
     margin: 0;
     font-family: 'Poetsen One', sans-serif , 'Times New Roman', Times, serif;
 }
+<<<<<<< HEAD
 body {
     background-color: rgb(6, 180, 180);
     overflow: hidden;
 }
+=======
+
+>>>>>>> f502ab7f698c7e1159982566f445555bb8d4c538
 .nav {
     background-color: #fff;
     width: 100%;
@@ -15,25 +19,30 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-#logo {
+
+.logo {
     width: 30vh;
     margin: 10px;
-    padding-left: 30px;
+    padding-left: 10px;
 }
+
 .nav ul {
     display: flex;
     align-items: center;
     padding-right: 40px;
 }
+
 .nav ul li {
     padding: 10px 20px;
     list-style: none;
 }
+
 .nav ul li a{
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
+<<<<<<< HEAD
 .hero{
     display: flex;
 }
@@ -96,3 +105,5 @@ body {
       top: -12.25rem;
     }
   }
+=======
+>>>>>>> f502ab7f698c7e1159982566f445555bb8d4c538
