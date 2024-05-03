@@ -1,0 +1,32 @@
+* {
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poetsen One', sans-serif , 'Times New Roman', Times, serif;
+}
+.nav {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo {
+    width: 30vh;
+    margin: 10px;
+    padding-left: 30px;
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+.nav ul li {
+    padding: 10px 20px;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
