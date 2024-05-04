@@ -2,9 +2,9 @@
   box-sizing: 0;
   padding: 0;
   margin: 0;
-  font-family: "Poetsen One", sans-serif, "Times New Roman", Times, serif;
 }
 body {
+  font-family: "Poetsen One", sans-serif, "Roboto", Times, serif;
   background-color: rgb(6, 180, 180);
 }
 .nav {
@@ -60,9 +60,15 @@ body {
 
   /* Seccion de Sercivios */
   .section-servicios {
-    background-color: #fff;
+    background-color: #84A59D;
     padding: 25px;
     text-align: center;
+  }
+  
+  #servicios {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    /* font-family: 'Roboto'; */
   }
   
   .servicios {
@@ -72,12 +78,12 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 20px;
+    gap: 10px;
   }
   
   .row {
     display: flex;
-    gap: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   .column {
@@ -87,14 +93,37 @@ body {
     align-items: center;
     width: 30%;
     text-align: center;
-    border: 1px solid rgb(75, 75, 255);
-    border-radius: 5px;
-    padding: 10px;
+    border: 1px solid rgb(77, 77, 86);
+    border-radius: 10px;
+    padding: 5px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #F7EDE2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-bottom: 20px;
   }
 
+  .column svg {
+    width: 100px;
+    height: 150px;
+  }
   .column img {
-    border-radius: 7px 7px 0 0;
+    height: 90px;
+    width: 90px;
+    padding: 30px;
+  }
+
+  .column p {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  
+  .column:hover {
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+    background-color: #ffdeba;
+    cursor: pointer;
+    user-select: none;
   }
   
   .roller{
