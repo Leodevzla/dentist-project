@@ -1,12 +1,12 @@
 * {
-    box-sizing: 0;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Poetsen One', sans-serif , 'Times New Roman', Times, serif;
-}
-body {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poetsen One', sans-serif , 'Times New Roman', Times, serif; 
     background-color: rgb(6, 180, 180);
-    overflow: hidden;
 }
 .nav {
     background-color: #fff;
@@ -57,6 +57,45 @@ body {
     text-transform: uppercase;
     color: #F1FAEE; 
     font-size: 4rem;
+  }
+
+  /* Seccion de Sercivios */
+  .section-servicios {
+    background-color: #fff;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  
+  .column {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    border: 1px solid rgb(75, 75, 255);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .column img {
+    border-radius: 7px 7px 0 0;
   }
   
   .roller{
