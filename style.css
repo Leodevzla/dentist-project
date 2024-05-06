@@ -2,10 +2,7 @@
   box-sizing: 0;
   padding: 0;
   margin: 0;
-}
-body {
-  font-family: "Poetsen One", sans-serif, "Roboto", Times, serif;
-  background-color: rgb(6, 180, 180);
+  font-family: "Poetsen One", sans-serif, "Times New Roman", Times, serif;
 }
 .nav {
   background-color: #fff;
@@ -15,7 +12,7 @@ body {
   justify-content: space-between;
 }
 #logo {
-  width: 30vh;
+  width: 20vh;
   margin: 10px;
   padding-left: 30px;
 }
@@ -35,6 +32,7 @@ body {
 }
 .hero {
   display: flex;
+  background-color: #25d3bc;
 }
 .img-principal {
   width: 60%;
@@ -43,114 +41,8 @@ body {
   width: 105vh;
   display: flex;
 }
+/*roller Hero Landing*/
 .text {
-    width: 40%;
-    height:100vh; 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-  }
-  h1{
-    text-align:center;
-    text-transform: uppercase;
-    color: #F1FAEE; 
-    font-size: 4rem;
-  }
-
-  /* Seccion de Sercivios */
-  .section-servicios {
-    background-color: #84A59D;
-    padding: 25px;
-    text-align: center;
-  }
-  
-  #servicios {
-    margin-top: 20px;
-    margin-bottom: 35px;
-    /* font-family: 'Roboto'; */
-  }
-  
-  .servicios {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 10px;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .column {
-    font-weight: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    text-align: center;
-    border: 1px solid rgb(77, 77, 86);
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-    background-color: #F7EDE2;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
-
-  .column svg {
-    width: 100px;
-    height: 150px;
-  }
-  .column img {
-    height: 90px;
-    width: 90px;
-    padding: 30px;
-  }
-
-  .column p {
-    margin-bottom: 10px;
-    width: 80%;
-  }
-  
-  .column:hover {
-    transition: 0.4s ease-in-out;
-    transform: scale(1.1);
-    background-color: #ffdeba;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .roller{
-    height: 4.125rem;
-    line-height: 4rem;
-    position: relative;
-    overflow: hidden; 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    color: #000303;
-  }
-  
-  
-  #spare-time{
-    font-size: 2rem;
-    font-style: italic;
-    letter-spacing: 1rem;
-    margin-top: 0;
-    color: #902ed1;
-    
-  }
-  
-  .roller #rolltext {
-    position: absolute;
   width: 40%;
   height: 100vh;
   display: flex;
@@ -209,29 +101,28 @@ h1 {
 .about {
   background-color: #e5cdec;
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  padding-top: 30px;
 }
 #me img {
   width: 400px;
-  padding-left: 40px;
+  padding-right: 40px;
 }
 .me {
   width: 70%;
   text-align: justify;
   padding-top: 100px;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 .me h1 {
   color: #902ed1;
   font-size: 4rem;
+  
 }
 .me p {
   padding-top: 20px;
   max-width: 45rem;
-  padding-left: 150px;
   color: #505252;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -248,7 +139,6 @@ h1 {
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  align-items: right;
   z-index: 100;
 }
 .my-whatsApp {
