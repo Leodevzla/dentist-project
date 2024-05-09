@@ -8,6 +8,7 @@
   --color: #3c3163;
   --transition-time: 0.5s;
 }
+/* Seccion de Header */
 .nav {
   background-color: #fff;
   width: 100%;
@@ -34,6 +35,7 @@
   color: black;
   font-size: 20px;
 }
+/* Seccion de Hero */
 .hero {
   display: flex;
   background-color: #25d3bc;
@@ -102,14 +104,19 @@
     top: -12.25rem;
   }
 }
+/* Seccion about */
 .about {
   background-color: #e5cdec;
   display: flex;
   flex-direction: row;
+  padding-bottom: 50px;
 }
 #me img {
-  width: 400px;
+  width: 500px;
   padding-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .me {
   width: 70%;
@@ -130,37 +137,14 @@
   font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
-/* Whatsapp button*/
-.whatsApp {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  left: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  z-index: 100;
-}
-.my-whatsApp {
-  margin-top: 16px;
-}
-.whatsApp:hover {
-  background-color: white;
-  color: #25d366;
-}
 /* Seccion de Servicios */
 .cards-wrapper {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  grid-gap: 2rem;
   padding: 4rem;
   margin: 0 auto;
-  width: max-content;
 }
 
 .card {
@@ -172,12 +156,9 @@
   color: white;
   border-radius: 3em;
   padding: 1em;
-  /*margin: 2em;*/
+  margin: .5em;
   display: flex;
   align-items: flex-end;
-  background-size: cover;
-  background-position: center;
-  position: relative;
   overflow: hidden;
   text-decoration: none;
 }
@@ -185,11 +166,12 @@
 .card:hover {
   transform: rotate(0);
 }
-
 .card h1 {
   margin: 0;
   font-size: 1.5em;
   line-height: 1.2em;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .card p {
@@ -205,15 +187,15 @@
 
 .card .tags {
   display: flex;
+  justify-content: center;
 }
 
 .card .tags .tag {
   font-size: 0.75em;
-  background: rgba(74, 238, 197);
+  background: #fff;
   border-radius: 0.5rem;
   padding: 0 0.5em;
-  margin-right: 0.5em;
-  line-height: 1.5em;
+  display: flex;
 }
 
 .card:hover .tags .tag {
@@ -255,120 +237,46 @@
 }
 .info {
   font-size: 1.2em;
-  display: flex;
   height: 3em;
-  display: flex;
-  flex-direction: column;
+}
+.info .title {
+  color: #902ed1;
+  font-size: 4rem;
+  padding-top: 50px;
 }
 .info h1 {
   font-size: 1em;
   font-weight: normal;
 }
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 1285px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .info {
-    justify-content: center;
-  }
-  .card-grid-space .num {
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .cards-wrapper {
-    padding: 4rem 2rem;
-  }
-  .card {
-    max-width: calc(100vw - 4rem);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .info {
-    display: block;
-    text-align: center;
-  }
-  .info h1 {
-    margin: 0;
-  }
-}
 footer {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+  width: 100%;
+  height: 150px;
+  background-color: #000000;
+  margin-top: 1vh;
 }
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+footer .logo-footer {
+  width: 30vh;
+  margin: 10px;
+  padding-left: 30px;
 }
-
-.wave {
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
+/* Whatsapp button*/
+.whatsApp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
 }
-
-.wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
+.my-whatsApp {
+  margin-top: 16px;
 }
-
-.wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
-}
-
-@keyframes wave {
-    2% {
-        transform: translateX(1);
-    }
-
-    25% {
-        transform: translateX(-25%);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-25%);
-    }
-
-    100% {
-        transform: translateX(1);
-    }
+.whatsApp:hover {
+  background-color: white;
+  color: #25d366;
 }
