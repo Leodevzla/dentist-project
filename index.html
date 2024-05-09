@@ -5,12 +5,14 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
      <script src="https://kit.fontawesome.com/ec32a4d107.js" crossorigin="anonymous"></script>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link
          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fira+Code:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poetsen+One&family=Roboto+Condensed:ital@0;1&family=Roboto:ital,wght@1,100;1,400&display=swap"
          rel="stylesheet">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <title>Od. Derys Bolívar | Ortodoncista</title>
  </head>
 
@@ -28,7 +30,7 @@
 
          <div class="img-principal"><img src="img/img-hero.png" alt=""></div>
          <div class="text">
-             <h1>¡Atrevete a: <div class="roller">
+             <h1 class="title">¡Atrevete a: <div class="roller">
                      <span id="rolltext">Sonreir<br>Ser feliz<br>Vivir<br>
                          <span id="spare-time">Ser tu mismo</span>
                  </div>
@@ -38,12 +40,12 @@
      <!-- Seccion de Sobre mi -->
      <article id="about" class="about">
          <div class="me">
-             <h1>¡hola soy Derys Bolívar!</h1>
+             <h1 class="title">¡hola soy Derys Bolívar!</h1>
+            
              <p>Soy de Maracay, me gradúe de la Universidad Nacional Experimental
                  Rómulo Gallegos en el año 2009. Después de varios años ejerciendo la odontología me especialicé
                  en Ortodoncista, esta disciplina que va más allá de la alineación de los dientes, tiene el privilegio
                  de transformar sonrisas, así como de mejorar la calidad de vida de mis pacientes</p>
-
              <p>La ortodoncia para mí no es solo una especialidad, sino una vocación.</p>
              <p>Todos los días trabajo con pasión, ética y dedicación para brindar sonrisas
                  saludables y perfectas</p>
@@ -52,60 +54,136 @@
              <img src="img/me.png" alt="Dra Derys Bolivar">
          </div>
      </article>
-
-     <!-- Seccion de Servicios -->
-     <section class="section-servicios">
-         <h2 id="servicios">Servicios</h2>
-         <div class="row">
-             <div class="column">
-                 <img src="img/img-servicios/Ortodoncia.png" alt="Imagen de endodoncia">
-                 <h3>ORTODONCIA</h3><br>
-                 <p>Optimizamos tu sonrisa. Nuestros tratamientos ortodónticos, realinean tus dientes para una función
-                     óptima y una estética impecable.</p>
-             </div>
-             <div class="column">
-                 <img src="img/img-servicios/endo.png" alt="Imagen de endodoncia">
-                 <h3>ENDODONCIA</h3><br>
-                 <p>Tratamos las infecciones dentales de manera eficiente y cuidadosa, preservando la estructura dental
-                     y eliminando el dolor asociado.</p>
-             </div>
-             <div class="column">
-                 <img src="img/img-servicios/odontog.png" alt="Imagen de odontologia general">
-                 <h3>ODONTOLOGÍA GENERAL</h3><br>
-                 <p>Desde limpiezas regulares hasta tratamientos restaurativos, nuestra odontología general aborda todas
-                     tus necesidades dentales con profesionalismo y dedicación.</p>
-             </div>
-             <div class="column">
-                 <img src="img/img-servicios/odontopediatria.png" alt="Imagen odontologia pediatrica">
-                 <h3>ODONTOLOGÍA PEDIÁTRICA</h3><br>
-                 <p>Ofrecemos un enfoque suave y compasivo para garantizar la salud bucal de tus hijos desde temprana
-                     edad.</p>
-             </div>
-         </div>
-         <div class="row">
-             <div class="column">
-                 <img src="img/img-servicios/sonrisa.png" alt="Imagen de sonrisa">
-                 <h3>DISEÑO DE SONRISAS</h3><br>
-                 <p>Transforma tu sonrisa con precisión. A través de procedimientos personalizados creamos una sonrisa
-                     que refleje tu belleza única y confianza.</p>
-             </div>
-             <div class="column">
-                 <img src="img/img-servicios/dental.png" alt="Imagen de rehabilitacion de protesis">
-                 <h3>REHABILITACIÓN PROTÉSICA</h3><br>
-                 <p>Nuestros servicios de rehabilitación protésica devuelven la forma y función a tu sonrisa con
-                     prótesis dentales de alta calidad y un enfoque meticuloso.</p>
-                    </div>
-                    <div class="column">
-                       <img src="img/img-servicios/rehabili.png" alt="Imagen de rehabilitacion de protesis">
-                        <h3>FÉRULAS ANTIESTRÉS</h3><br>
-                        <p>Nuestras férulas personalizadas brindan alivio y protección contra el bruxismo y el estrés
-                            mandibular, promoviendo la salud y el bienestar oral a largo plazo.</p>
-                    </div>
-         </div>
-         <div class="column">
-         </div>
-     </section>
-
+     <section id="servicios" class="info">
+     <div class="cards-wrapper">
+      <div class="card-grid-space">
+        <div class="card" style="background-color: blueviolet;">
+          <div>
+            <img src="img/img-servicios/orto.jpg" alt="">
+            <h1>Ortodoncia</h1>
+            <p>Optimizamos tu sonrisa. Nuestros tratamientos ortodónticos, realinean tus dientes para una función
+              óptima y una estética impecable.</p>
+            <div class="tags">
+              <button class="tag">Más información</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="card-grid-space">
+          <div class="card" style="background-color: blueviolet;">
+            <div>
+              <img src="img/img-servicios/endodoncia.jpeg" alt="">
+              <h1>Endodoncia</h1>
+              <p>Tratamos las infecciones dentales de manera eficiente y cuidadosa, preservando la estructura dental
+                y eliminando el dolor asociado.</p>
+              <div class="tags">
+                <button class="tag">Más información</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="card-grid-space">
+            <div class="card" style="background-color: blueviolet;">
+              <div>
+                <img src="img/img-servicios/general.jpg" alt="">
+                <h1>Odontologia General</h1>
+                <p> Nuestra odontología general aborda todas
+                  tus necesidades dentales con profesionalismo y dedicación.</p>
+                <div class="tags">
+                  <button class="tag">Más información</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-grid-space">
+            <div class="card" style="background-color: blueviolet;">
+              <div>
+                <img src="img/img-servicios/pediatria.jpeg" alt="">
+                <h1>Odontopediatria</h1>
+                <p> Ofrecemos un enfoque suave y compasivo para garantizar la salud bucal de tus hijos desde temprana
+                  edad.</p>
+                <div class="tags">
+                  <button class="tag">Más información</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     <div class="cards-wrapper">
+          <div class="card-grid-space">
+            <div class="card" style="background-color: blueviolet;">
+              <div>
+                <img src="img/img-servicios/diseño.jpeg" alt="">
+                <h1>Diseño Sonrisa</h1>
+                <p>Transforma tu sonrisa con precisión. A través de procedimientos personalizados creamos una sonrisa
+                  que refleje tu belleza única y confianza.</p>
+                <div class="tags">
+                  <button class="tag">Más información</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-grid-space">
+            <div class="card" style="background-color: blueviolet;">
+              <div>
+                <img src="img/img-servicios/protesis.jpg" alt="">
+                <h1>Prostodoncia</h1>
+                <p>Nuestros servicios de rehabilitación protésica devuelven la forma y función a tu sonrisa con
+                  prótesis dentales de alta calidad y un enfoque meticuloso.</p>
+                <div class="tags">
+                  <button class="tag">Más información</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-grid-space">
+            <div class="card" style="background-color: blueviolet;">
+              <div>
+                <img src="img/img-servicios/ferulas.jpeg" alt="">
+                <h1>Ferulas Antiestress</h1>
+                <p>Nuestras férulas personalizadas brindan alivio y protección contra el bruxismo y el estrés
+                  mandibular, promoviendo la salud y el bienestar oral a largo plazo.</p>
+                <div class="tags">
+                  <button class="tag">Más información</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-grid-space">
+            <div class="card" style="background-color: blueviolet;">
+              <div>
+                <img src="img/img-servicios/periodoncia.jpeg" alt="">
+                <h1>Periodoncia</h1>
+                <p>Nuestra odontología general aborda todas
+                  tus necesidades dentales con profesionalismo y dedicación.</p>
+                <div class="tags">
+                  <button class="tag">Más información</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <ul class="circles">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+     <footer>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+   </div>
+     </footer>
+     <script src="script.js"></script>
      <a href="https://wa.link/6gfgla" class="whatsApp" target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
  </body>
 
