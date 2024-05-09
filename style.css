@@ -235,7 +235,7 @@
 }
 
 .card:before {
-  background: #3c3163;
+  background: blueviolet;
   width: 250%;
   height: 250%;
 }
@@ -247,7 +247,7 @@
 }
 
 .card:hover {
-  color: #3c3163;
+  color: blueviolet;
 }
 
 .card:hover:before, .card:hover:after {
