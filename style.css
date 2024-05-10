@@ -138,31 +138,14 @@
   font-size: 20px;
 }
 /* Seccion de Servicios */
-.seccion-servicios {
-  font-size: 1.2em;
-  height: 24%;
-}
-.seccion-servicios .title {
-  color: #902ed1;
+.title {
   font-size: 4rem;
   padding-top: 50px;
+  color: #902ed1;
 }
-.seccion-servicios h1 {
-  font-size: 1em;
-  font-weight: normal;
-  color: #fff;
-}
-.cards{
+.cards-wrapper {
   display: flex;
-}
-.cards-all {
-  display: flex;
-  justify-content: space-between;
   flex-direction: row;
-  align-items: center;
-  padding: 4rem;
-  margin: 0 auto;
-  flex-direction: column;
 }
 
 .card {
@@ -198,7 +181,7 @@
 
 .card p {
   font-size: 0.8em;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   line-height: 1.5em;
 }
 .card img {
@@ -216,7 +199,7 @@
   border-radius: 0.5rem;
   padding: 0 0.5em;
   display: flex;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 800;
 }
 
@@ -259,16 +242,53 @@
 .card:hover:after {
   transform: scale(1);
 }
+
+/* FOOTER */
 footer {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   background-color: blueviolet;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
 }
+
 footer .logo-footer {
   width: 250px;
   height: 200px;
   padding-left: 50px;
+  transition: 0.5s ease-in-out;
 }
+footer .logo-footer:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 15px;
+  max-width: 100%;
+}
+
+.footer a {
+  border: 1px solid rgb(107, 106, 106);
+  transition: 0.3s ease-in-out;
+  padding: 5px;
+}
+.footer-redes a:hover {
+  transform: scale(1.3);
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 /* Whatsapp button*/
 .whatsApp {
   position: fixed;
@@ -282,7 +302,7 @@ footer .logo-footer {
   text-align: center;
   font-size: 50px;
   z-index: 100;
-  margin-bottom: 150px;
+  margin-bottom: 10px;
 }
 .my-whatsApp {
   margin-top: 16px;
@@ -343,7 +363,7 @@ footer .logo-footer {
 }
 
 .whatsApp:hover::after {
-  whatsApp: -70%;
+  /* whatsApp: -70%; */
   background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
     radial-gradient(circle, #7d2ae8 20%, transparent 20%),
     radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
