@@ -16,25 +16,144 @@
   flex-direction: row;
   justify-content: space-between;
 }
-#logo {
-  width: 20vh;
-  margin: 10px;
-  padding-left: 30px;
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
-.nav ul {
+
+.nav-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding-right: 40px;
+  height: 62px;
 }
-.nav ul li {
-  padding: 10px 20px;
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
   list-style: none;
 }
-.nav ul li a {
+
+.navbar .nav-container a {
   text-decoration: none;
-  color: black;
-  font-size: 20px;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
 }
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.logo img {
+  width: 130px;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+
 /* Seccion de Hero */
 .hero {
   display: flex;
@@ -300,14 +419,18 @@ footer #feet {
   font-size: 25px;
   color: white;
 }
-.footer p {
+footer #feet p {
   font-family: "Roboto";
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   display: flex;
   align-items: end;
   justify-content: end;
   color: white;
+}
+.footer #logo {
+  width: 150px;
+  padding-top: 30px;
 }
 .footer-redes a:hover {
   transform: scale(1.3);
@@ -326,8 +449,8 @@ footer #feet {
     rgb(69, 240, 228) 68%,
     rgb(150, 58, 137) 98%
   );
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  background-size: 100% 100%;
   background-attachment: fixed;
 }
 
@@ -349,7 +472,7 @@ footer #feet {
   position: fixed;
   width: 200%;
   height: 12em;
-  animation: wave 10s -3s linear infinite;
+  animation: wave 5s -3s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
   bottom: 0;
@@ -489,5 +612,136 @@ footer #feet {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
       110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  * {
+    max-width: 280px;
+  }
+  
+  .text {
+    height: 50vh;
+    display: flex;
+  }
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #f1faee;
+    font-size: 1rem;
+  }
+  
+  .roller {
+    height: 1rem;
+    line-height: 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+    display: flex;
+  color: #000303;
+  }
+  
+  #spare-time {
+    font-size: .5rem;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+    margin-top: 0;
+    color: #902ed1;
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 10s infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -4rem;
+    }
+    50% {
+      top: -8rem;
+    }
+    72.5% {
+      top: -12.25rem;
+    }
+  }
+  .nav:first-of-type img {
+    width: 80px;
+    padding-top: 10px;
+  }
+  .nav-container {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  .hero {
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+  .info {
+    background-color: blueviolet;
+  }
+  .cards-all .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .card { 
+   background-image: url(https://e1.pxfuel.com/desktop-wallpaper/823/457/desktop-wallpaper-compre-nordic-european-cinza-e-branco-triangulo-tridimensional-figura-geometrica-interior-backgrounds-tv-wall-decoracao-mural-de-yunlin188-152-63-cinza.jpg);
+    font-family: "Roboto";
+    height: 300px;
+    width: 200px;
+    font-size: 1.1em;
+    color: blueviolet;
+    border-radius: 3em;
+    padding: 1em;
+    margin: 0.5em;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    transform: rotate(0);
+  }
+  .card h1 {
+    margin: 0;
+    font-size: .8em;
+    line-height: 1.2em;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  .card p {
+    padding-top: 10px;
+    font-size: .6em;
+    font-family: "Roboto";
+    line-height: 1.2em;
+    text-align: justify;
+  }
+  .card img {
+    width: 150px;
+    height: 110px;
+  }
+  
+  .card .tags {
+    display: flex;
+  }
+  
+  .card .tags .tag {
+    font-size: .8em;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 0 0.5em;
+    display: flex;
+    font-family: "Roboto";
+    font-weight: 400;
   }
 }
