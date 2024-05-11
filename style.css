@@ -49,7 +49,7 @@
 }
 /*roller Hero Landing*/
 .text {
-  width: 40%;
+  width: 60%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -109,7 +109,6 @@
   background-color: #e5cdec;
   display: flex;
   flex-direction: row;
-  padding-bottom: 50px;
 }
 #me img {
   width: 500px;
@@ -138,6 +137,11 @@
   font-size: 20px;
 }
 /* Seccion de Servicios */
+.cards-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .title {
   font-size: 4rem;
   padding-top: 50px;
@@ -180,7 +184,7 @@
 }
 
 .card p {
-  font-size: 0.8em;
+  font-size: 1em;
   font-family: "Roboto";
   line-height: 1.5em;
 }
@@ -194,7 +198,7 @@
 }
 
 .card .tags .tag {
-  font-size: 0.75em;
+  font-size: 1em;
   background: #fff;
   border-radius: 0.5rem;
   padding: 0 0.5em;
@@ -230,8 +234,8 @@
 
 .card:after {
   background: white;
-  width: 200%;
-  height: 200%;
+  width: 250%;
+  height: 250%;
 }
 
 .card:hover {
@@ -247,30 +251,35 @@
 footer {
   max-width: 100%;
   height: 100%;
-  background-color: blueviolet;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 12px;
+  flex-direction: column;
 }
-
-footer .logo-footer {
-  width: 250px;
-  height: 200px;
-  padding-left: 50px;
-  transition: 0.5s ease-in-out;
-}
-footer .logo-footer:hover {
-  transform: scale(1.1);
-}
-
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   max-width: 100%;
-  flex-wrap: wrap;
 }
-
+.footer #menu {
+  width: 600px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer #menu li {
+  list-style: none;
+}
+.footer #menu li a {
+  text-decoration: none;
+  color: rgb(250, 246, 249);
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.footer #menu #list li a {
+  font-size: 10px;
+}
 .footer-redes {
   display: flex;
   gap: 15px;
@@ -278,15 +287,108 @@ footer .logo-footer:hover {
 }
 
 .footer a {
-  border: 1px solid rgb(107, 106, 106);
   transition: 0.3s ease-in-out;
   padding: 5px;
 }
+footer #feet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.footer a i {
+  font-size: 25px;
+  color: white;
+}
+.footer p {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  color: white;
+}
 .footer-redes a:hover {
   transform: scale(1.3);
-  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
-  border: 1px solid black;
-  border-radius: 10px;
+  box-shadow: 0.1px 0.1px 0.1px rgba(129, 129, 129, 0.4);
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 20px;
+}
+.background {
+  margin: auto;
+  font-family: "Roboto", BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    rgb(209, 106, 230) 3%,
+    rgb(18, 241, 212) 38%,
+    rgb(69, 240, 228) 68%,
+    rgb(150, 58, 137) 98%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
 }
 
 /* Whatsapp button*/
@@ -294,8 +396,8 @@ footer .logo-footer:hover {
   position: fixed;
   width: 80px;
   height: 80px;
-  bottom: 50px;
-  left: 40px;
+  bottom: 190px;
+  left: 30px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
@@ -311,11 +413,7 @@ footer .logo-footer:hover {
   background-color: white;
   color: #25d366;
 }
-.whatsApp:active {
-  transform: scale(0.96);
-}
-
-.whatsApp:before,
+.whatsApp:ac#25d366 .whatsApp:before,
 .whatsApp:after {
   position: absolute;
   content: "";
@@ -329,15 +427,15 @@ footer .logo-footer:hover {
 
 .whatsApp:hover:before {
   top: -70%;
-  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-image: radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #046126 20%, transparent 30%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #046126 15%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
     10% 10%, 18% 18%;
   background-position: 50% 120%;
@@ -364,13 +462,13 @@ footer .logo-footer:hover {
 
 .whatsApp:hover::after {
   /* whatsApp: -70%; */
-  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-image: radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #046126 15%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%),
+    radial-gradient(circle, #046126 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
   background-position: 50% 0%;
   animation: greenbottomBubbles 0.6s ease;
