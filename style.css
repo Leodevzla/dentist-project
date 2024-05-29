@@ -572,6 +572,17 @@ footer #feet p {
   .nav-container {
     display: none;
   }
+  .navbar .menu-items {
+    padding-top: 3rem;
+    background-color: #ffffff;
+    width: 20%;
+    transform: translate(-180%);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    
+  }
   .container {
     width: 100%;
     margin: auto;
