@@ -293,6 +293,9 @@ h1 {
   align-items: flex-end;
   overflow: hidden;
   text-decoration: none;
+ -webkit-box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
+  -moz-box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
+  box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);;
 }
 
 .card:hover {
@@ -334,6 +337,7 @@ h1 {
   border: 1px solid #fff;
   margin-left: 4rem;
   margin-top: 1em;
+  cursor: pointer;
 }
 
 .card:hover .tags .tag {
@@ -581,7 +585,7 @@ footer #feet p {
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
     text-align: center;
-    
+   
   }
   .container {
     width: 100%;
@@ -597,11 +601,11 @@ footer #feet p {
   }
 
   .info {
-    background-color: rgb(203, 98, 248);
+    background-color: rgb(255, 255, 255);
   }
 
   .info .title {
-    color: white;
+    color: rgb(203, 98, 248);
     font-size: 2rem;
   }
   .cards-all .cards-wrapper {
@@ -668,6 +672,7 @@ footer #feet p {
     font-weight: 400;
     border: 1px solid #fff;
     color: #000;
+    cursor: pointer;
   }
   .about {
     display: flex;
