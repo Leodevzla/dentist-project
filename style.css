@@ -265,7 +265,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
 }
 .title {
   font-size: 3rem;
@@ -610,7 +609,7 @@ footer #feet p {
   }
   .card { 
     height: 300px;
-    width: 200px;
+    width: 250px;
     font-size: 1.1em;
     color: #fff;
     padding: 0;
@@ -618,6 +617,8 @@ footer #feet p {
     display: flex;
     align-items: flex-end;
     text-decoration: none;
+    border-radius: 1rem !important;
+
   }
   .card:hover {
     color: #242525;
@@ -634,6 +635,7 @@ footer #feet p {
     line-height: 1.2em;
     text-align: center;
     padding-top: 15px;
+    color: #000;
   }
   
   .card p {
@@ -643,9 +645,10 @@ footer #feet p {
     line-height: 1.2em;
     text-align: justify;
     padding: .7rem 1rem 0 .7rem;
+    color: #000;
   }
   .card img {
-    width: 200px;
+    width: 250px;
     height: 150px;
   }
   
@@ -662,29 +665,32 @@ footer #feet p {
     display: flex;
     font-family: "Roboto";
     font-weight: 400;
-    border: 1px solid #242525;
+    border: 1px solid #fff;
+    color: #000;
   }
   .about {
-    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     background-color: #25d3bc;
   }
   .about h1 {
     color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.5rem;
   }
   .about p {
-    color: #fff;
+    color: #000;
     font-size: 1.1rem;
   }
   .me {
     width: 100%;
-    padding-top: 20px;
+   padding: 1rem;
   }
-  .about .title {
-    font-size: 2rem;
+  .about .name {
+    font-size: 1.7rem;
     width: 100%;
-
+    text-align: center;
   }
   .whatsApp {
     display: none;
@@ -702,7 +708,7 @@ footer #feet p {
     font-size: 1rem;
   }
   footer #feet p {
-    font-size: 1rem;
+    font-size: .7rem;
    text-align: center;
   }
 }
