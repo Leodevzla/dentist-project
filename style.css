@@ -200,9 +200,9 @@ h1 {
 }
 
 #spare-time {
-  font-size: 2rem;
+  font-size: 1rem;
   font-style: italic;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.3rem;
   margin-top: 0;
   color: #902ed1;
 }
@@ -293,9 +293,9 @@ h1 {
   align-items: flex-end;
   overflow: hidden;
   text-decoration: none;
- -webkit-box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
-  -moz-box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
-  box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);;
+  box-shadow: -webkit-box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
+box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
 }
 
 .card:hover {
