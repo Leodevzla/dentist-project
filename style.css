@@ -705,6 +705,16 @@ footer #feet p {
   footer #logo {
     display: none;
   }
+  .footer #foot-none {
+    display: none;
+  }
+  .footer #menu {
+   padding-left: 3rem;
+   align-items: center;
+  }
+  .footer #menu a {
+    margin-right: 2rem;
+  }
   footer .footer-redes i {
     font-size: 1rem;
   }
