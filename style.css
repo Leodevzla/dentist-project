@@ -430,6 +430,9 @@ box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
   padding: 0;
   list-style: none;
   border-radius: 1rem;
+  -webkit-box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
+box-shadow: 10px 7px 16px -7px rgba(0,0,0,0.72);
 }
 .carousel__controls,
 .carousel__activator {
